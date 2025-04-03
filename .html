@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровая культура в профессиональной деятельности</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+        header { background: linear-gradient(to right, #4CAF50, #2E8B57); color: white; text-align: center; padding: 20px; }
+        nav { background: #222; padding: 10px; text-align: center; }
+        nav a { margin: 10px; text-decoration: none; color: white; padding: 10px 15px; display: inline-block; font-weight: bold; transition: 0.3s; }
+        nav a:hover { background: #4CAF50; border-radius: 5px; transform: scale(1.1); }
+        main { padding: 20px; max-width: 1000px; margin: auto; background: white; box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); border-radius: 8px; }
+        .section { margin-bottom: 40px; text-align: center; }
+        .section img { max-width: 90%; height: auto; display: block; margin: 20px auto; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+        footer { text-align: center; padding: 20px; background: #222; color: white; margin-top: 20px; }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('nav a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Цифровая культура в профессиональной деятельности</h1>
+        <p>Аннотация: Веб-сайт о цифровых инструментах для создания контента</p>
+        <p>Разработчик: Хайлов Артём</p>
+    </header>
+    <nav>
+        <a href="#classification">Классификация инструментов</a>
+        <a href="#tool1">Инструмент 1</a>
+        <a href="#tool2">Инструмент 2</a>
+        <a href="#tool3">Инструмент 3</a>
+    </nav>
+    <main>
+        <section id="classification" class="section">
+            <h2>Классификация инструментов</h2>
+            <p>Mind Map с различными инструментами для создания цифрового контента.</p>
+            <img src="https://tse4.mm.bing.net/th?id=OIP.EOmYFjnlzA8nqYNZdaU7wwHaDd&pid=Api" alt="Карта инструментов">
+        </section>
+        <section id="tool1" class="section">
+            <h2>Инструмент 1: Canva</h2>
+            <p>Canva - удобный онлайн-сервис для создания графики и презентаций.</p>
+            <p>Примеры: баннеры, посты для соцсетей, инфографика.</p>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.7uJAq9uefzRTcoa6mjr-cAHaEK&pid=Api" alt="Скриншот Canva">
+        </section>
+        <section id="tool2" class="section">
+            <h2>Инструмент 2: Figma</h2>
+            <p>Figma - мощный инструмент для дизайна интерфейсов и прототипирования.</p>
+            <p>Примеры: веб-дизайн, UI/UX-дизайн, прототипы.</p>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.bnPIPHm2h8_PWc_AqIxx6gHaER&pid=Api" alt="Скриншот Figma">
+        </section>
+        <section id="tool3" class="section">
+            <h2>Инструмент 3: Tilda</h2>
+            <p>Tilda - платформа для создания лендингов и сайтов без программирования.</p>
+            <p>Примеры: лендинги, блоги, онлайн-магазины.</p>
+            <img src="https://tse4.mm.bing.net/th?id=OIP.y8bSfnreIKe71-N9osFIZgHaFj&pid=Api" alt="Скриншот Tilda">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Цифровая культура</p>
+    </footer>
+</body>
+</html>
